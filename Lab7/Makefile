@@ -1,7 +1,7 @@
 CC=gcc
 
 ush:	./history/history.o ./linkedlist/linkedList.o ./linkedlist/listUtils.o ./utils/myUtils.o ./alias/alias.o ./utils/ushrcUtils.o ./pipes/pipes.o ./redirect/redirect.o ./tokenize/makeArgs.o
-	gcc -g -o ush cscd340Lab7.c ./history/history.o ./linkedlist/linkedList.o ./linkedlist/listUtils.o ./utils/myUtils.o ./alias/alias.o ./utils/ushrcUtils.o ./pipes/pipes.o ./redirect/redirect.o ./tokenize/makeArgs.o
+	gcc -g -o ush ush.c ./history/history.o ./linkedlist/linkedList.o ./linkedlist/listUtils.o ./utils/myUtils.o ./alias/alias.o ./utils/ushrcUtils.o ./pipes/pipes.o ./redirect/redirect.o ./tokenize/makeArgs.o
 
 linkedList.o:	./linkedlist/linkedList.c ./linkedlist/linkedList.h
 	gcc -g -c ./linkedlist/linkedList.c
